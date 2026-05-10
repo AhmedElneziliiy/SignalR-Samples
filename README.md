@@ -4,7 +4,7 @@ An **ASP.NET Core MVC application** showcasing multiple real-time communication 
 
 ## What it does
 
-This project is a collection of SignalR hub implementations demonstrating different real-time use cases. Each hub illustrates a specific pattern — from simple broadcast messages to group-based and user-targeted communication.
+A collection of SignalR hub implementations demonstrating different real-time use cases — from simple broadcast messages to group-based and user-targeted communication.
 
 ## Tech Stack
 
@@ -18,15 +18,15 @@ This project is a collection of SignalR hub implementations demonstrating differ
 | Hub | Description |
 |---|---|
 | `ChatHub` | Real-time chat room messaging |
-| `NotificationHub` | Broadcast notifications to all connected clients |
+| `NotificationHub` | Broadcast notifications to all clients |
 | `OrderHub` | Live order status updates |
 | `PresenceHub` / `UserHub` | Track online/offline user presence |
-| `HouseGroupHub` | Group-based messaging (send to specific groups) |
+| `HouseGroupHub` | Group-based messaging |
 | `DeathlyHallowsHub` | Themed group communication example |
 
 ## Key Features
 
-- Multiple hub types in a single application
+- Multiple hub types in one application
 - Group membership management
 - User-targeted messaging
 - Connection lifecycle tracking (OnConnected / OnDisconnected)
@@ -34,12 +34,6 @@ This project is a collection of SignalR hub implementations demonstrating differ
 
 ## Getting Started
 
-1. Set your SQL Server connection string in `appsettings.json`.
-2. Apply migrations:
-   ```bash
-   dotnet ef database update
-   ```
-3. Run the app:
-   ```bash
-   dotnet run --project SignalR_Samples
-   ```
+1. Set connection string in `appsettings.json`.
+2. Apply migrations: `dotnet ef database update`
+3. Run: `dotnet run --project SignalR_Samples`
